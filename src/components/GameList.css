@@ -1,4 +1,5 @@
 .button-filter-games {
+    margin-left: 2rem;
     padding: 0.5rem 1rem;
     background-color: papayawhip;
     color: rebeccapurple;
@@ -7,7 +8,7 @@
 }
 
 .game-list {
-    margin: 0 2rem;
+    margin: 3rem 2rem;
 }
 
 .game-cards-container {

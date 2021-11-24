@@ -12,12 +12,10 @@ const GameDetails = (props) => {
     useEffect(() =>{
         axios.get(`https://apis.wilders.dev/wild-games/games/${gameId}`)
         .then(response => setSelectedGame(response.data))
-    }, [])
+    }, [gameId])
 
     const {name, released, background_image, short_screenshots, rating} = selectedGame;
 
-    console.log(selectedGame);
-    console.log(short_screenshots);
 
     return (
         <>
@@ -33,12 +31,11 @@ const GameDetails = (props) => {
                 }
 
                 <h3>Screenshots:</h3>
-
-                { short_screenshots.map(shot => {
-                    return (
-                        <img src={shot.image} alt={`image of game numer ${shot.id}`} className="game-screenshot" />
-                    )
-                })}
+                <div>
+                    {console.log(short_screenshots)}
+                {short_screenshots && short_screenshots.map((shot, index) => <img src={shot.image} className="game-screenshot" key={index}/>)
+                }
+                </div>
             </main>
 
         </>
