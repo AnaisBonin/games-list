@@ -1,8 +1,13 @@
 import './App.css';
+import GameList from './components/GameList';
+import Header from './components/Header';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <>
+      <Header name="jeu"/>
+      <GameList />
+    </>
 
   );
 }
