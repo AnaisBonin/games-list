@@ -1,7 +1,8 @@
 .header {
-    margin: 3rem;
+    margin: 5rem 3rem 1rem 3rem;
 }
 
 .header h1 {
     color: palevioletred;
+    margin-bottom: 3rem;
 }

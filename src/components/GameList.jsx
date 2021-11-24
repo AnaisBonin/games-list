@@ -36,7 +36,7 @@ const GameList = () => {
             {gameList.map(game => {
                 console.log(game.background_image)
                 return (
-                    <Game key={game.id} name={game.name} image={game.background_image} rating={game.rating}/>
+                    <Game key={game.id} id={game.id} name={game.name} image={game.background_image} rating={game.rating}/>
                 )
             })}
             </div>

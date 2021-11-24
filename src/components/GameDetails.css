@@ -1,0 +1,24 @@
+.game-details {
+    margin: 0 3rem;
+}
+
+.game-details h2 {
+    padding: 1rem 0;
+    color: rgb(32, 156, 223);
+}
+
+.game-details h3 {
+    padding: 1rem 0;
+    color: rgb(155, 15, 64);
+}
+
+.game-screenshot {
+    width: 350px;
+    padding: 1rem;
+    transition: padding 0.3s ease-in;
+}
+
+.game-screenshot:hover {
+    padding: 0.5rem;
+}
+
