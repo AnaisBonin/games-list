@@ -1,0 +1,16 @@
+.button-filter-games {
+    padding: 0.5rem 1rem;
+    background-color: papayawhip;
+    color: rebeccapurple;
+    border: none;
+    border-radius: 20px;
+}
+
+.game-list {
+    margin: 0 2rem;
+}
+
+.game-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
