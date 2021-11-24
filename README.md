@@ -1,99 +1,70 @@
-# REACT GAMES - CHECKPOINT 2
-## Disclaimer
+# Getting Started with Create React App
 
-The checkpoint is quite consequent, it's no big deal if you don't do everything before the deadline. Do your best, and most importantly **HAVE FUN** :smiley:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# The checkpoint itself :fire:
+## Available Scripts
 
-## :zero: Setup
+In the project directory, you can run:
 
-Before starting anything, your first mission is to clone this project, then create a branch with your lastname and firstname like so : `lastname_firstname`
+### `npm start`
 
-You are starting the checkpoint from scratch ! So you need to install everything.
-You can either use :
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- [create-react-app](https://create-react-app.dev/)
-- [vitejs](https://vitejs.dev/)
-- [react-starter-wcs](https://www.npmjs.com/package/react-starter-wcs)
-- [parcel](https://v2.parceljs.org/recipes/react/)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## :one: React
+### `npm test`
 
-**In this step, you will create a web-app using React, that displays games from one of our API !**
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-_Please please, don't forget to make atomic commits with explicit messages_ :pray:
+### `npm run build`
 
-You can find the API documentation there :
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- https://wild-games.jsrover.wilders.dev 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-If this one doesn't work, or is too slow, we also prepared some mirrors :
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- https://apis.wilders.dev/wild-games
+### `npm run eject`
 
-### Starting point
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-- You can wipe all the boilerplate jsx code in `App.jsx`
-- Then, create a `<Header />` component that displays a cool welcome message.
-- Pass a `name` prop to this component, to display your website name (_react game_ if you don't have any idea)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-_commit_ 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Some list ?
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- Your next mission is to display the full list of games.
-- Start by creating two new components `<GameList />` and `<Game />`.
-- In the `<GameList />` component, you will need to get the list from the API, and map it in your jsx. For each game you get from the API, display a `<Game />` component.
-- Your `<Game />` component will need some props to display the game informations. There are plenty of informations you can use (_name, rating, images, ..._). Display them in the format of your choice !
+## Learn More
 
-_commit_ 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Filtering
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- Now that you are displaying all games, your next mission is to add a filter on this list.
-- Add a `button` to the `<GameList />` component, when you click on it, it will display only the games whose rating is above `4.5`. When clicking again on this button, the list should display all the games again.
+### Code Splitting
 
-_again, don't forget to commit_ :wink:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Details page
+### Analyzing the Bundle Size
 
-You are going to use `react-router` and `react-router-dom`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Refactor your code to implement a router, with two routes :
-  - `"/"` will display your `<GameList />`
-  - `"/games/:id"` will display the next component you are going to create
-- Create a `<GameDetails />` component, and use it in your `/games/:id` route.
-- Then, you can add a navigation link (or button) to your `<Game />` component that will redirect to the details page of this game.
-- The `<GameDetails />` component will need to fetch data from the API and display detailed information about the current game (what you choose to display is up to you !)
+### Making a Progressive Web App
 
-_you know what to do, right ?_ :wink:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## :two: Quizz
+### Advanced Configuration
 
-- To answer the quiz go to [this application](https://wild-quizz.jsrover.wilders.dev/play/checkpoint-2).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- - -
-### Congrats ! You did it ! :confetti_ball:
+### Deployment
 
-You really deserved a beer ! :beers: (or your favourite drink)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Bonuses
+### `npm run build` fails to minify
 
-If you have remaining time, here are some bonuses. As they are bonuses, they are **totally optional**, and you shouldn't do them if you haven't finished the previous steps.
-
-### Removing a game
-
-`<Game />` contains a `<button>` which allows you to remove a game from the list _(doesn't need to remove it in the API)_.
-
-### Refactor your API calls
-
-There is a really cool library called [react-query](https://react-query.tanstack.com/overview#enough-talk-show-me-some-code-already). You can try to refactor your API calls using this :wink:
-
-### Use a CSS framework
-
-Integrate the CSS framework of your choice in your React App. 
-If you don't know which one to choose, we can recommand Tailwind.
-
-You can start by looking at the documentation about [how to install it](https://tailwindcss.com/docs/installation).
-
-**Be careful !** :warning: If you choose to start using `create-react-app`, you will need to install CRACO, but every steps [are explained here](https://tailwindcss.com/docs/guides/create-react-app).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
