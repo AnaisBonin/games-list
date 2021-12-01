@@ -11,8 +11,8 @@ const Game = ({id, name, image, rating}) => {
         <div className="game-card">
             <h2>{name}</h2>
             <img src={image} alt={`${name}, ${id}`}/>
-            <p>Rating: {rating}/5</p>
-            <Link to={`/games/${id}`}>Details</Link>
+            <p className="game-card-rating">Rating: {rating}/5</p>
+            <Link className="game-card-details" to={`/games/${id}`}><p>Details</p></Link>
         </div>
     )
 }

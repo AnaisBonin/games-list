@@ -4,5 +4,17 @@
 
 .header h1 {
     color: palevioletred;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.header-return {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--blue-color);
+}
+
+.header-return:hover {
+    color: palevioletred;
 }

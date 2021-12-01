@@ -1,10 +1,23 @@
+.button-countainer {
+    height: 4rem;
+}
+
 .button-filter-games {
     margin-left: 2rem;
     padding: 0.5rem 1rem;
-    background-color: papayawhip;
-    color: rebeccapurple;
+    background-color: rgb(254, 236, 239);
+    color: var(--blue-color);
     border: none;
     border-radius: 20px;
+    font-weight: bold;
+    transition: padding 0.2s ease-out;
+}
+
+.button-filter-games:hover {
+    cursor: pointer;
+    padding: 0.8rem 1.3rem;
+    transition: padding 0.2s ease-out;
+
 }
 
 .game-list {
