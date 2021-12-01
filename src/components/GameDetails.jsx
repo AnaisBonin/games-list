@@ -31,7 +31,7 @@ const GameDetails = (props) => {
                 }
 
                 <h3>Screenshots:</h3>
-                <div>
+                <div className="screenshots-countainer">
                     {console.log(short_screenshots)}
                 {short_screenshots && short_screenshots.map((shot, index) => <img src={shot.image} className="game-screenshot" key={index}/>)
                 }

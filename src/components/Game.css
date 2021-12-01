@@ -12,6 +12,8 @@
     margin-bottom: 1rem;
     margin-top: 0.5rem;
     color: var(--blue-color);
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
 }
 
 .game-card-rating {
