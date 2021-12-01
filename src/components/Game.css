@@ -2,11 +2,41 @@
     width: 350px;
     margin: 2rem;
     padding: 1rem;
-    border: 1px solid black;
+    border: 2px solid pink;
+    box-shadow: 5px 5px 5px rgb(86, 65, 86);
+    border-radius: 15px;
 
+}
+
+.game-card h2 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    color: var(--blue-color);
+}
+
+.game-card-rating {
+    color: var(--blue-color);
 }
 
 .game-card img {
     width: 100%;
     margin: 1rem 0;
+}
+
+.game-card-details {
+    text-decoration: none;
+    color: pink;
+}
+
+.game-card-details p {
+    margin: 1rem 0;
+}
+
+.game-card-details:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+Link {
+    text-decoration: none;
 }

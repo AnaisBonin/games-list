@@ -1,15 +1,19 @@
 .game-details {
     margin: 0 3rem;
+    margin-bottom: 10rem;
 }
 
 .game-details h2 {
-    padding: 1rem 0;
-    color: rgb(32, 156, 223);
+    padding: 2rem 0;
+    color: var(--blue-color);
+    font-size: 3.5rem;
 }
 
 .game-details h3 {
     padding: 1rem 0;
-    color: rgb(155, 15, 64);
+    margin-top: 2.5rem;
+    color: purple;
+    font-weight: normal;
 }
 
 .game-screenshot {

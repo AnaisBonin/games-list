@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Game from './Game';
-import "./GameList.css"
+import './GameList.css'
+import Header from './Header'
 
 const GameList = () => {
     const [gameList, setGameList] = useState([]);
@@ -28,21 +29,24 @@ const GameList = () => {
 
 
     return (
-        <div className="game-list">
-            <button type="button" className="button-filter-games" onClick={filterGames}> 
-            {!showBestGames ? "Best Games ( > 4.5/5)" : "All Games"}
-            </button>
-            <div className="game-cards-container">
-            {gameList.map(game => {
-                console.log(game.background_image)
-                return (
-                    <Game key={game.id} id={game.id} name={game.name} image={game.background_image} rating={game.rating}/>
-                )
-            })}
+        <>
+            <Header name='together' />
+            <div className='game-list'>
+                <div className="button-countainer">
+                    <button type='button' className='button-filter-games' onClick={filterGames}> 
+                    {!showBestGames ? 'Best Games (Rating > 4.5)' : 'All Games'}
+                    </button>
+                </div>
+                <div className='game-cards-container'>
+                {gameList.map(game => {
+                    console.log(game.background_image)
+                    return (
+                        <Game key={game.id} id={game.id} name={game.name} image={game.background_image} rating={game.rating}/>
+                    )
+                })}
+                </div>   
             </div>
-
-            
-        </div>
+        </>
     )
 }
 
