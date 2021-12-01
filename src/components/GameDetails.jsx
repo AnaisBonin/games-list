@@ -9,8 +9,12 @@ const GameDetails = (props) => {
     let params = useParams();
     const gameId = params.id;
 
+    //Using .env to call API so if we change the API URL we only have to change it in the .env file
+
+    console.log(process.env.REACT_APP_API_URL);
+
     useEffect(() =>{
-        axios.get(`https://apis.wilders.dev/wild-games/games/${gameId}`)
+        axios.get(`${process.env.REACT_APP_API_URL}${gameId}`)
         .then(response => setSelectedGame(response.data))
     }, [gameId])
 

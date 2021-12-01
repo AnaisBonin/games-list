@@ -13,7 +13,7 @@ const GameList = () => {
     }, [])
 
     const getAllGames = () => {
-        axios.get('https://apis.wilders.dev/wild-games/games')
+        axios.get(process.env.REACT_APP_API_URL)
         .then(response => response.data)
         .then(data => setGameList(data))
     }
