@@ -28,3 +28,25 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width: 700px) {
+
+    .button-countainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 2rem;
+        width: 100%;
+    }
+    
+    .button-filter-games {
+        margin-left: 0;
+    }
+
+    .game-cards-container {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
